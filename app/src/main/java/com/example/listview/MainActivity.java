@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         txt_view = findViewById(R.id.text_view);
         list_view = findViewById(R.id.list_view);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, countries);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.my_list_item, countries);
         list_view.setAdapter(adapter);
 
         list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
